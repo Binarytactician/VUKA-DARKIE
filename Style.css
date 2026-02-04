@@ -1,30 +1,86 @@
-.upload-section {
-  padding: 20px;
-  border-bottom: 1px solid #eee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header input {
+  width: 40%;
+  padding: 10px;
+}
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+
+.nav a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background: #333;
+}
+
+.banner {
+  background: url("https://picsum.photos/1200/400") center/cover;
+  color: white;
+  padding: 80px;
   text-align: center;
 }
 
-.upload-section h2 {
-  margin-bottom: 10px;
-}
-
-.upload-section input,
-.upload-section button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 90%;
-  max-width: 300px;
-}
-
-.upload-section button {
+.banner button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
   background: black;
   color: white;
-  border: none;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-.upload-section button:hover {
-  background: #333;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  margin: 10px 0;
 }
